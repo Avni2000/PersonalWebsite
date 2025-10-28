@@ -1,0 +1,93 @@
+body {
+  background: white;
+  padding: 0 24px;
+  margin: 30;
+  height: 100vh;
+  color: black;
+  /* display:  center; */
+  justify-content: center;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+  
+}
+
+.name-home {
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+  justify-content: center;
+  padding: 30px;
+}
+.text {
+  color: black;
+  font-size: 25px;
+  word-spacing: -3px;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 30px;
+  line-height: 2;
+  width: 1000px;
+  padding: 10px
+}
+.mainPFP {
+  padding: 30px;
+  justify-content: flex-end;
+}
+.content {
+  background-color: rgb(243, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* keep top-aligned */
+  gap: 40px; /* between text and image*/
+}
+
+.navbar {
+  display: flex;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 140%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  font-size: 20px;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+} 
