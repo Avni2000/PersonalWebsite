@@ -12,6 +12,10 @@ body {
   
 }
 
+.mainPFP img {
+  height: 200px;
+}
+
 .name-home {
   color: black;
   font-size: 30px;
@@ -28,12 +32,16 @@ body {
   justify-content: flex-start;
   margin-left: 30px;
   line-height: 2;
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
   padding: 10px
 }
 .mainPFP {
   padding: 30px;
   justify-content: flex-end;
+}
+.mainPFP img {
+height: 600px;
 }
 .content {
   background-color: rgb(243, 240, 240);
@@ -49,7 +57,7 @@ body {
   border-radius: 30px;
   padding: 10px 20px;
   margin: 0 auto;
-  width: 140%;
+  max-width: 100%;
   justify-content: space-between;
   align-items: center;
   position: fixed;
@@ -64,10 +72,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
-  
 }
-ul {
+
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -76,11 +83,11 @@ ul {
   font-size: 20px;
 }
 
-ul li {
+.navbar ul li {
   float: left;
 }
 
-ul li a {
+.navbar ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -88,6 +95,6 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+.navbar ul li a:hover {
   background-color: #111111;
 } 
