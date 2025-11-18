@@ -11,5 +11,5 @@ npm run build -- --base=/~avni/
 # --delete removes files on server that don't exist locally
 rsync -avz --delete --progress \
   dist/ \
-  avni@best-linux.cs.wisc.edu:~/public/html/
+    avni-CS:~/public/html/
 

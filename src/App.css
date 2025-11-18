@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  background: white;
+  padding: 0 24px 0 24px;
+  margin: 0;
+  min-height: 100vh;
+  color: black;
+  justify-content: center;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mainPFP img {
+  height: 200px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name-home {
+  color: black;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.name-home h1 {
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
+  text-transform: none;
 }
 
-.card {
-  padding: 2em;
+.text {
+  color: black;
+  font-size: 25px;
+  word-spacing: -3px;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 30px;
+  line-height: 2;
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.mainPFP {
+  padding: 30px;
+  justify-content: flex-end;
+}
+
+.mainPFP img {
+  height: 600px;
+}
+
+.content {
+  background-color: rgb(243, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 120px;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 30px;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
+}
+
+.menu li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.indented-text {
+  text-indent: 2em;
 }

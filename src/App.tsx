@@ -1,25 +1,27 @@
-import './style.css'
+import './App.css'
 import { Link } from 'react-router-dom'
 import { getAssetPath } from './utils'
 
 function App() {
   return (
     <>
-      <div className="navbar">
+      <div className="header-container">
         <div className="name-home">
           <h1>Avni Badiwale</h1>
         </div>
-        <ul className="menu">
-          <li className="item">
-            <Link to="/">Home</Link>
-          </li>
-          <li className="item">
-            <Link to="/resume">Resume</Link>
-          </li>
-          <li className="item">
-            <a href="#">Blog</a>
-          </li>
-        </ul>
+        <div className="navbar">
+          <ul className="menu">
+            <li className="item">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="item">
+              <Link to="/resume">Resume</Link>
+            </li>
+            <li className="item">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="content">
         <div className="text">

@@ -1,6 +1,6 @@
 body {
   background: white;
-  padding: 120px 24px 0; /* Added top padding to account for fixed navbar */
+  padding: 0 24px 0 24px;
   margin: 0;
   min-height: 100vh;
   color: black;
@@ -54,22 +54,27 @@ height: 600px;
   justify-content: center;
   align-items: flex-start; /* keep top-aligned */
   gap: 40px; /* between text and image*/
+  padding-top: 120px;
+  margin: 0;
 }
 
 .navbar {
   display: flex;
   background: #fff;
-  border-radius: 30px;
-  padding: 10px 20px;
-  margin: 0 auto;
-  max-width: 100%;
-  justify-content: space-between;
+  border-radius: 15px;
+  padding: 12px 30px;
+  margin: 15px auto 0 auto;
+  width: fit-content;
+  max-width: 90%;
+  justify-content: center;
+  gap: 40px;
   align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -77,31 +82,39 @@ height: 600px;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 30px;
+  align-items: center;
 }
 
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  font-size: 20px;
+  display: none;
 }
 
 .navbar ul li {
-  float: left;
+  display: none;
 }
 
 .navbar ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  display: none;
 }
 
 .navbar ul li a:hover {
-  background-color: #111111;
+  display: none;
+}
+
+.menu li a {
+  color: #222;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
+}
+
+.menu li a:hover {
+  background-color: #f0f0f0;
+  color: #000;
 }
 
 .indented-text {

@@ -26,8 +26,9 @@ function Resume() {
           href={getAssetPath("resume/Avni-Badiwale.pdf")}
           download=""
           className="download-btn"
+          style={{ color: "white" }}
         >
-          <b>↓ Download PDF</b>
+          ↓ Download PDF
         </a>
       </div>
       <div className="center" style={{ textAlign: "center" }}>

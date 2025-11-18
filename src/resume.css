@@ -12,6 +12,8 @@ body {
     line-height: 1.5;
     color: #222;
     background: #f5f5f5;
+    padding: 0;
+    margin: 0;
 }
 
 .banner {
@@ -54,7 +56,7 @@ body {
 
 .resume-content {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 0 auto 30px auto;
     padding: 40px 50px;
     background: white;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -64,6 +66,10 @@ body {
 .center {
     text-align: center;
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .name-text {
@@ -72,16 +78,18 @@ body {
     letter-spacing: 0.5px;
     margin-bottom: 6px;
     gap: 30px;
+    text-align: center;
 }
 
 .center p {
     font-size: 10pt;
     line-height: 1.4;
-    text-align: center;
+    text-align: center !important;
+    margin: 0 auto;
 }
 
 .center a {
-    color: #2980b9;
+    color: blue !important;
     text-decoration: none;
 }
 
@@ -89,13 +97,13 @@ body {
     text-decoration: underline;
 }
 
-hr {
+.resume-content hr {
     border: none;
     border-top: 0.5px solid #333;
     margin: 8px 0;
 }
 
-h1 {
+.resume-content h1 {
     font-size: 13pt;
     font-weight: 700;
     margin-top: 10px;
@@ -104,29 +112,29 @@ h1 {
     letter-spacing: 0.5px;
 }
 
-p {
+.resume-content p {
     margin-bottom: 8px;
     text-align: justify;
 }
 
-strong {
+.resume-content strong {
     font-weight: 600;
 }
 
-ul {
+.resume-content ul {
     margin-left: 20px;
     margin-bottom: 10px;
 }
 
-li {
+.resume-content li {
     margin-bottom: 4px;
 }
 
-li p {
+.resume-content li p {
     margin: 0;
 }
 
-code {
+.resume-content code {
     font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
     background: #f4f4f4;
     padding: 2px 6px;
@@ -134,14 +142,14 @@ code {
     font-size: 10pt;
 }
 
-a {
-    color: #2980b9;
+.resume-content a {
+    color: blue;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-a:hover {
-    color: #3498db;
+.resume-content a:hover {
+    color: blue;
     text-decoration: underline;
 }
 
