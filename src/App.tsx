@@ -6,6 +6,9 @@ function App() {
   return (
     <>
       <div className="navbar">
+        <div className="name-home">
+          <h1>Avni Badiwale</h1>
+        </div>
         <ul className="menu">
           <li className="item">
             <Link to="/">Home</Link>
@@ -17,9 +20,6 @@ function App() {
             <a href="#">Blog</a>
           </li>
         </ul>
-      </div>
-      <div className="name-home">
-        <h1>Avni Badiwale</h1>
       </div>
       <div className="content">
         <div className="text">

@@ -1,8 +1,8 @@
 body {
   background: white;
-  padding: 0 24px;
-  margin: 30;
-  height: 100vh;
+  padding: 120px 24px 0; /* Added top padding to account for fixed navbar */
+  margin: 0;
+  min-height: 100vh;
   color: black;
   /* display:  center; */
   justify-content: center;
@@ -18,11 +18,16 @@ body {
 
 .name-home {
   color: black;
-  font-size: 30px;
-  text-align: center;
-  background-color: white;
-  justify-content: center;
-  padding: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
+}
+
+.name-home h1 {
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
+  text-transform: none;
 }
 .text {
   color: black;
