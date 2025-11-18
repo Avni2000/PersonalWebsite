@@ -1,6 +1,6 @@
 import './style.css'
 import { Link } from 'react-router-dom'
-import mainPFP from './assets/mainPFP.jpg'
+import { getAssetPath } from './utils'
 
 function App() {
   return (
@@ -24,27 +24,27 @@ function App() {
       <div className="content">
         <div className="text">
           <h3>About Me</h3>
+          <p >
           Hi there! I'm Avni Badiwale. I'm a student at UW Madison, majoring in CS
           and Math. I often write that I chase fascinating things, and I'd like this
           website to serve as the stack overflow of all of the cool things I've
           learned (and am bound to learn) along the way. I.E. a repository of deep
           dives I've gone on, intuition I've gained about certain concepts, attempts
           to explain things I find interesting, projects I've found myself in, etc.
+          </p>
           <br />
+          If you're interested in my background, my <Link to="/resume">resume</Link> is available here. I've spent the last year working on impactful projects and discovering which subfields align with my interests.
+
+
           <br />
-          If you're a recruiter or just curious, I have my resume{" "}
-          <a href="/resume/resume.html"> here.</a> I spent the last year working on
-          some really cool projects and exploring what kinds of subfields I'd be
-          interested in.
-          <br />
-          <br />
-          So anyway, hello! I'll have more to share as soon as I find time to write
-          + figure out how to get KaTeX working
+          <br/>
+          <p >So anyway, hello! I'll have more to share as soon as I find time to write
+          + figure out how to get KaTeX working</p>
         </div>
         <div className="mainPFP">
           <figure>
             <img 
-              src={mainPFP} 
+              src={getAssetPath('assets/mainPFP.jpg')}
               alt="Main profile picture"
             />
             <figcaption>

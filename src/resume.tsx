@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import './resume.css';
 import type { ReactNode } from "react";
+import { getAssetPath } from "./utils";
+
 const FloatRight = ({ children }: { children: ReactNode }) => (
   <span style={{ float: "right" }}>{children}</span>
 )
@@ -21,7 +23,7 @@ function Resume() {
           ← Back to Home
         </Link>
         <a
-          href="/~avni/resume/Avni-Badiwale.pdf"
+          href={getAssetPath("resume/Avni-Badiwale.pdf")}
           download=""
           className="download-btn"
         >
