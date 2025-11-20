@@ -6,7 +6,7 @@ body {
   color: black;
   justify-content: center;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
 }
 
 .mainPFP img {
@@ -28,16 +28,17 @@ body {
 }
 
 .text {
-  color: black;
+  color: #333;
   font-size: 25px;
-  word-spacing: -3px;
+  word-spacing: normal;
   text-align: left;
   justify-content: flex-start;
   margin-left: 30px;
-  line-height: 2;
+  line-height: 1.8;
   max-width: 1000px;
   width: 100%;
   padding: 10px;
+  font-weight: 400;
 }
 
 .mainPFP {
@@ -55,7 +56,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  padding-top: 120px;
+  padding-top: 40px;
   margin: 0;
 }
 
@@ -63,13 +64,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 15px 30px;
   background: #fff;
-  z-index: 9999;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 

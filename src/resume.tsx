@@ -1,36 +1,35 @@
-import { Link } from "react-router-dom";
 import './resume.css';
 import type { ReactNode } from "react";
 import { getAssetPath } from "./utils";
+import Navbar from "./components/Navbar";
 
 const FloatRight = ({ children }: { children: ReactNode }) => (
   <span style={{ float: "right" }}>{children}</span>
 )
 function Resume() {
   return (
-    <div className="resume-content">
-      <div
-        className="banner"
-        style={{
-          color: "white",
-          textDecoration: "none",
-          fontSize: 18,
-          fontWeight: 500,
-          transition: "opacity 0.2s"
-        }}
-      >
-        <Link to="/" style={{ color: "white" }}>
-          ← Back to Home
-        </Link>
-        <a
-          href={getAssetPath("resume/Avni-Badiwale.pdf")}
-          download=""
-          className="download-btn"
-          style={{ color: "white" }}
+    <>
+      <Navbar />
+      <div className="resume-content">
+        <div
+          className="banner"
+          style={{
+            color: "white",
+            textDecoration: "none",
+            fontSize: 18,
+            fontWeight: 500,
+            transition: "opacity 0.2s"
+          }}
         >
-          ↓ Download PDF
-        </a>
-      </div>
+          <a
+            href={getAssetPath("resume/Avni-Badiwale.pdf")}
+            download=""
+            className="download-btn"
+            style={{ color: "white" }}
+          >
+            ↓ Download PDF
+          </a>
+        </div>
       <div className="center" style={{ textAlign: "center" }}>
         <p>
           <span className="name-text">
@@ -75,10 +74,8 @@ function Resume() {
       <ul>
         <li>
           <p>
-            Singlehandedly built an interactive, campus<span>-</span>wide webmap
-            published on the employee homepage with an October 28th launch,
-            expected to be regularly used by more than 15K employees.
-          </p>
+          Singlehandedly built an interactive, campus-wide webmap to be published on the employee homepage, and expected
+          to be regularly used by more than 15K employees.          </p>
         </li>
         <li>
           <p>
@@ -246,6 +243,7 @@ function Resume() {
         </li>
       </ul>
     </div>
+    </>
   );
 }
 
