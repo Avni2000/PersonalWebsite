@@ -18,14 +18,14 @@ body {
 
 .name-home {
   color: black;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: bold;
   font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
 }
 
 .name-home h1 {
   margin: 0;
-  font-size: 32px;
+  font-size: 40px;
   font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
   text-transform: none;
 }
@@ -98,6 +98,7 @@ height: 600px;
 }
 
 .menu li a {
+  font-size: 1.3em;
   color: #222;
   text-decoration: none;
   font-weight: 500;

@@ -1,3 +1,4 @@
+/* Blog main page*/
 .blog-container {
   max-width: 900px;
   margin: 0 auto;
@@ -5,7 +6,7 @@
 }
 
 .blog-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 60px;
   padding-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
@@ -28,7 +29,7 @@
 .blog-posts-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 
 .blog-post-card {
@@ -50,28 +51,28 @@
 }
 
 .blog-post-card h3 {
-  font-size: 1.6em;
+  font-size: 2.0em;
   margin: 0 0 8px 0;
   font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
   color: #000;
 }
 
 .blog-post-date {
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: #999;
   margin: 0 0 12px 0;
   font-style: italic;
 }
 
 .blog-post-excerpt {
-  font-size: 1em;
+  font-size: 1.3em;
   color: #555;
   margin: 0 0 12px 0;
   line-height: 1.6;
 }
 
 .read-more {
-  font-size: 0.95em;
+  font-size: 1.15em;
   color: #0066cc;
   font-weight: 500;
   display: inline-block;
@@ -84,17 +85,17 @@
 
 /* Blog post page styles */
 .blog-post {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
-  font-size: 1.05em;
+  font-size: 1.20em;
   line-height: 1.8;
   color: #333;
   
 }
 
 .blog-post h2 {
-  font-size: 2em;
+  font-size: 2.4em;
   font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
   margin-bottom: 40px;
   text-align: center;
@@ -103,7 +104,7 @@
 }
 
 .blog-post h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
   margin-top: 40px;
   margin-bottom: 20px;
@@ -144,7 +145,7 @@
 }
 
 .blog-post figcaption {
-  font-size: 0.9em;
+  font-size: 1.1em;
   color: #999;
   margin-top: 10px;
   font-style: italic;
@@ -158,23 +159,23 @@
 
 @media (max-width: 768px) {
   .blog-header h1 {
-    font-size: 2em;
+    font-size: 2.8em;
   }
 
   .blog-post h2 {
-    font-size: 1.6em;
+    font-size: 2.4em;
   }
 
   .blog-post h3 {
-    font-size: 1.2em;
+    font-size: 1.8em;
   }
 
   .blog-post {
     padding: 30px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .blog-post-card h3 {
-    font-size: 1.3em;
+    font-size: 1.7em;
   }
 }

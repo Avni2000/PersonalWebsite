@@ -148,9 +148,9 @@ export default function WhyLLMsUseEmojis() {
                     />
                 </div>
 
-                <p>
+                <p> We use <></>
                     <a href="https://platform.openai.com/tokenizer" target="_blank" rel="noopener noreferrer">
-                        OpenAI's tokenizer
+                         OpenAI's tokenizer
                     </a> to visualize the cost of an emoji vs the cost of a short sentence. This further exemplifies the idea that similar, sentiment based, information can be emitted with fewer tokens through emojis.
                 </p>
 
