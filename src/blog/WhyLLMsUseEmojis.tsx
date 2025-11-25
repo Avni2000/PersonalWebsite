@@ -134,13 +134,13 @@ export default function WhyLLMsUseEmojis() {
 
                 <p>Consider then, a simple but extremely powerful example to wrap up:</p>
 
-                <div style={{ display: 'flex', gap: '40px', margin: '40px 0', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="token-comparison">
                     <img
                         src={getAssetPath('assets/blog-emojis/image3.png')}
                         alt="Text without emoji example"
                         style={{ maxWidth: '400px', height: 'auto' }}
                     />
-                    vs.
+                    <span className="comparison-separator">vs.</span>
                     <img
                         src={getAssetPath('assets/blog-emojis/image1.png')}
                         alt="Text with emoji example"

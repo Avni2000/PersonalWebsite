@@ -60,48 +60,59 @@ body {
   margin: 0;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
 
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 30px;
-  align-items: center;
-}
-
-.menu li {
-  display: inline-block;
-}
-
-.menu li a {
-  color: #222;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-family: 'Computer Modern Serif', 'Latin Modern Roman', Georgia, serif;
-}
-
-.menu li a:hover {
-  background-color: #f0f0f0;
-  color: #000;
-}
 
 .indented-text {
   text-indent: 2em;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+    /* Image on top, text below */
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+  }
+
+  .text {
+    margin-left: 0;
+    text-align: center;
+    /* Center text on mobile */
+    padding: 0 20px;
+    font-size: 18px;
+    /* Slightly smaller font for readability */
+  }
+
+  .mainPFP {
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .mainPFP figure {
+    margin: 0;
+    max-width: 90%;
+    /* Constrain to 90% of container */
+  }
+
+  .mainPFP img {
+    height: auto;
+    width: 100%;
+    /* Fill the figure container */
+    max-width: 400px;
+    /* Maximum width constraint */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+  }
+
+  .name-home {
+    font-size: 24px;
+  }
+
+  .name-home h1 {
+    font-size: 24px;
+  }
 }

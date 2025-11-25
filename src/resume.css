@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     z-index: 1000;
     margin-bottom: 20px;
 }
@@ -59,7 +59,7 @@ body {
     margin: 0 auto 30px auto;
     padding: 40px 50px 40px 50px;
     background: white;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 2px;
 }
 
@@ -158,12 +158,51 @@ body {
     body {
         background: white;
     }
+
     .banner {
         display: none;
     }
+
     .resume-content {
         box-shadow: none;
         padding: 0;
         margin: 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .resume-content {
+        padding: 20px;
+        margin: 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .name-text {
+        font-size: 24px;
+    }
+
+    .center p {
+        font-size: 14px;
+    }
+
+    /* Stack float right elements */
+    span[style*="float: right"] {
+        float: none !important;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* Adjust headings */
+    .resume-content h1 {
+        font-size: 16px;
+        margin-top: 20px;
     }
 }
