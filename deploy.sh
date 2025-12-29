@@ -5,7 +5,7 @@
 set -e  # Exit on error
 npm run build -- --base=/~avni/
 git add .
-git commit -m "Deploying updated site: $(git diff --cached --name-only | paste -sd, -)"
+git commit -m "Deploying updated site: $(git diff --cached --name-only | tr '\n' ',' | sed 's/,$//')"
 
 # Deploy using rsync over SSH
 # The -avz flags: archive mode, verbose, compress
