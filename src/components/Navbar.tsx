@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import Resume from '../resume'
 
 export default function Navbar() {
   return (
@@ -12,9 +13,9 @@ export default function Navbar() {
           <li className="item">
             <Link to="/">Home</Link>
           </li>
-          <li className="item">
-            <Link to="/resume">Resume</Link>
-          </li>
+            <li className="item">
+              <Resume name="Resume" />
+            </li>
           <li className="item">
             <Link to="/blog">Blog</Link>
           </li>

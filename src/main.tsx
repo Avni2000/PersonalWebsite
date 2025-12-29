@@ -11,7 +11,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/*" element={<App />} />
-        <Route path="/resume/*" element={<Resume />} />
+        <Route path="/resume/*" element={<Resume name="" />} />
         <Route path="/blog/*" element={<BlogHome />} />
         <Route path="/blog/why-llms-use-emojis/*" element={<WhyLLMsUseEmojis />} />
       </Routes>

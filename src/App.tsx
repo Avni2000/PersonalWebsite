@@ -2,7 +2,7 @@ import './App.css'
 import { Link } from 'react-router-dom'
 import { getAssetPath } from './utils'
 import Navbar from './components/Navbar'
-
+import Resume from './resume.tsx'
 function App() {
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
             to explain things I find interesting, projects I've found myself in, etc.
           </p>
           <br />
-          <p>If you're interested in my background, my <Link to="/resume">resume</Link> is available here. I've spent the last year working on impactful projects and discovering which subfields align with my interests.</p>
+          <p>If you're interested in my background, my <Resume name="resume"/> is available here. I've spent the last year working on impactful projects and discovering which subfields align with my interests.</p>
           <br />
           <p>So anyway, hello! You should check out my most recent (and only, thus far) <Link to="/blog/why-llms-use-emojis">blog post</Link> on LLMs and Emojis</p>
 
@@ -31,8 +31,7 @@ function App() {
               src={getAssetPath('assets/mainPFP.jpg')}
               alt="Main profile picture"
               loading="lazy"
-              width="600"
-              height="400"
+              width="250"
               style={{ maxWidth: '100%', height: 'auto' }}
             />
             <figcaption>
