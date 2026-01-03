@@ -10,6 +10,7 @@ git commit -m "Deploying updated site: $(git diff --cached --name-only | tr '\n'
 # Deploy using rsync over SSH
 # The -avz flags: archive mode, verbose, compress
 # --delete removes files on server that don't exist locally
+echo "Starting deployment to server..."
 rsync -avz --delete --progress \
   dist/ \
     avni-CS:~/public/html/
