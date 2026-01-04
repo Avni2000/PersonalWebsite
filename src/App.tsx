@@ -91,16 +91,15 @@ function App() {
 
     setIsSending(true)
     try {
-      const apiPath = import.meta.env.BASE_URL + 'api/message.php'
-      const response = await fetch(apiPath, {
+      const topic = 'Ikosi2fcnV' 
+      const response = await fetch(`https://ntfy.sh/${topic}`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Title': 'Message from Olivia 💌',
+          'Priority': 'high',
+          'Tags': 'love,heart'
         },
-        body: JSON.stringify({
-          message: message,
-          from: 'Olivia'
-        })
+        body: message
       })
 
       if (response.ok) {
