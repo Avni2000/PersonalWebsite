@@ -91,7 +91,8 @@ function App() {
 
     setIsSending(true)
     try {
-      const response = await fetch('/api/message.php', {
+      const apiPath = import.meta.env.BASE_URL + 'api/message.php'
+      const response = await fetch(apiPath, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
