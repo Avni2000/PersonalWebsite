@@ -95,9 +95,9 @@ function App() {
       const response = await fetch(`https://ntfy.sh/${topic}`, {
         method: 'POST',
         headers: {
-          'Title': 'Message from Olivia 💌',
+          'Title': 'Message from Olivia',
           'Priority': 'high',
-          'Tags': 'love,heart'
+          'Tags': 'love,heart,sparkling_heart'
         },
         body: message
       })
