@@ -14,14 +14,4 @@ echo "Starting deployment to server..."
 rsync -avz --delete --progress \
   dist/ \
     avni-CS:~/public/html/
-
-echo "Deploying API files..."
-rsync -avz --progress \
-  public/api/ \
-    avni-CS:~/public/html/api/
-
-echo "Setting permissions on PHP files..."
-ssh avni-CS "chmod 755 ~/public/html/api/*.php"
-
-echo "Deployment complete!"
-
+echo "Deployment completed successfully."
