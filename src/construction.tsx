@@ -111,30 +111,30 @@ function ConstructionApp() {
       {/* Matrix Hacker Overlay */}
       {showGarageDoor && (
         <div className="garage-door-overlay">
-          <div className="garage-door" ref={matrixRef}></div>
-        </div>
-      )}
-
-      {/* Message Box */}
-      {showMessageBox && (
-        <div className="message-overlay">
-          <div className="message-box">
-            <h2>Hi lovely :)</h2>
-            <textarea
-              className="message-input"
-              placeholder="Type your message here..."
-              rows={8}
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              disabled={isSending}
-            />
-            <button
-              className="message-submit"
-              onClick={handleSendMessage}
-              disabled={isSending}
-            >
-              {isSending ? 'Sending...' : 'Send'}
-            </button>
+          <div className="garage-door" ref={matrixRef}>
+            {/* Message Box inside the matrix container */}
+            {showMessageBox && (
+              <div className="message-overlay">
+                <div className="message-box">
+                  <h2>Hi lovely :)</h2>
+                  <textarea
+                    className="message-input"
+                    placeholder="Type your message here..."
+                    rows={8}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    disabled={isSending}
+                  />
+                  <button
+                    className="message-submit"
+                    onClick={handleSendMessage}
+                    disabled={isSending}
+                  >
+                    {isSending ? 'Sending...' : 'Send'}
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
