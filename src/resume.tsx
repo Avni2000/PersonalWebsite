@@ -6,7 +6,6 @@ export default function Resume(props: { name: string }) {
             download=""
             style={{ color: "black" }}
           >{props.name}</a>
-
     )
 
 }
